@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "> stopping nginx"
+s6-svscanctl -t /etc/s6

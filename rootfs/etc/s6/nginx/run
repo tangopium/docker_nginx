@@ -1,0 +1,7 @@
+#!/bin/bash
+
+pushd /var/www > /dev/null
+  echo "> starting nginx"
+  exec /usr/sbin/nginx -g "daemon off;"
+  echo "> finished starting nginx"
+popd > /dev/null
